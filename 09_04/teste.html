@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarta-Feira - Boa Tarde</title>
+    
+</head>
+<body>
+    <h1>Quarta-Feira - Boa Tarde</h1>
+    <table id="schedule-table">
+        <thead>
+            <tr>
+                <th>Início</th>
+                <th>Fim</th>
+                <th>Turma</th>
+                <th>Instrutor</th>
+                <th>Unidade Curricular</th>
+                <th>Ambiente</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        function addRow(inicio, fim, turma, instrutor, unidadeCurricular, ambiente) {
+            const table = document.getElementById("schedule-table").getElementsByTagName('tbody')[0];
+            const newRow = table.insertRow();
+
+            const cell1 = newRow.insertCell(0);
+            const cell2 = newRow.insertCell(1);
+            const cell3 = newRow.insertCell(2);
+            const cell4 = newRow.insertCell(3);
+            const cell5 = newRow.insertCell(4);
+            const cell6 = newRow.insertCell(5);
+
+            cell1.textContent = inicio;
+            cell2.textContent = fim;
+            cell3.textContent = turma;
+            cell4.textContent = instrutor;
+            cell5.textContent = unidadeCurricular;
+            cell6.textContent = ambiente;
+        }
+
+        // Adding rows based on the provided image data
+        addRow("13:00", "17:00", "EMP-ELV-03", "DEIVID LEMOS", "ELET. VEICULAR", "SALA-3004");
+        addRow("13:00", "17:00", "UMO-MBMM-05", "FABRICIO PLASTER", "MECÂ. MOTOCICLETAS", "EXTERNO");
+        addRow("13:00", "17:00", "AIT-MEC-22", "ADEMIR PIN", "MANU. INDUSTRIAL", "LAB-3010");
+        addRow("13:30", "17:30", "AIT-ATI-5", "ALVIMAR VENTUROTI", "TECN. 4.0", "SALA-5103");
+        addRow("13:30", "17:30", "AIT-MEC-23", "CAMILA SOARES", "HIDR. ELETROHIDRÁULICA", "SALA-3006");
+        addRow("13:30", "17:30", "AIB-ELM-7", "DOUGLAS LIMA", "ACIO. AUTOMATIZADO", "SALA-3007");
+        addRow("13:30", "17:30", "AIT-ATI-6", "EDUARDO SILVA", "ACIO. ELETROELETRÔNICOS", "LAB-5022");
+        addRow("13:30", "17:30", "HTC-DDS-3-18", "GREGORY SILVA", "DESE. SISTEMAS", "LAB-5108");
+        addRow("13:30", "17:30", "HTC-ATI-2-47", "HEISTHEN SCARPARO", "INST. ANALÍTICA", "LAB-5116");
+        addRow("13:30", "17:30", "HTC-ELETR-2-02", "JOÃO JULIATTI", "INST. INDUSTRIAIS", "SALA-5107");
+        addRow("13:30", "17:30", "AIB-ADM-36", "LUIZ CASTELO", "GEST. ORGANIZACIONAL", "SALA-5103");
+        addRow("13:30", "17:30", "AIT-ELT-13", "MARCOS ALVES", "PROJ. POTÊNCIA", "LAB-4003");
+        addRow("13:30", "17:30", "EMP-PWEB-04", "PIETRA MEDEIROS", "PROG. WEB", "LAB-5109");
+        addRow("13:30", "17:30", "AIT-DDS-5", "RAMON NASCIMENTO", "DESE. SISTEMAS", "LAB-5106");
+        addRow("13:30", "17:30", "AIT-ELT-14", "SAMUEL MADEIRA", "GEST. MANUTENÇÃO", "SALA-4007");
+        addRow("13:30", "17:30", "HTC-ELT-2-60", "SANDRO SILVA", "INST. INDUSTRIAIS", "SALA-5111");
+        </script>
+</body>
+</html>
